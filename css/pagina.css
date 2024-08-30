@@ -10,10 +10,10 @@
 }
     
 .embeddedMessagingConversationButtonWrapper .embeddedMessagingConversationButton {
-   width: 200px;
-   border-radius: 9px;
+   width: 200px !important;
+   border-radius: 9px !important;
    align-items: center;
    justify-content: center; 
-   display: flex;
+   display: flex !important;
 }
     
