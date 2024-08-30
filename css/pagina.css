@@ -26,8 +26,6 @@
     margin: 0;
     font-size: var(--eswIconFontSize, 16px);
     box-sizing: border-box;
-
-    /* Propiedades que deseas modificar */
     width: 200px;
     border-radius: 9px;
     align-items: center;
