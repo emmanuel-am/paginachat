@@ -33,6 +33,6 @@
     display: flex !important;
 }
 
-.embedded-messaging-automated-response{
+div.embedded-messaging-automated-response{
    display: none !important;
 }
