@@ -33,6 +33,6 @@
     display: flex !important;
 }
 
-div.embedded-messaging-automated-response{
+div.embedded-messaging-automated-response[lwc-3cjfrt9r4ka], div.embedded-messaging-estimated-wait-time[lwc-3cjfrt9r4ka]{
    display: none !important;
 }
