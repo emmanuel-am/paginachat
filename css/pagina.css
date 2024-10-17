@@ -33,6 +33,8 @@
     display: flex !important;
 }
 
-.embedded-messaging-automated-response {
+div.embedded-messaging-automated-response, 
+div.embedded-messaging-estimated-wait-time {
+    /* Aquí aplicas los estilos que desees */
     display: none !important;
 }
