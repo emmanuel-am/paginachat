@@ -33,6 +33,6 @@
     display: flex !important;
 }
 
-.embedded-messaging-automated-response[lwc-3cjfrt9r4ka], .embedded-messaging-estimated-wait-time[lwc-3cjfrt9r4ka]{
-   display: none !important;
+.embedded-messaging-automated-response {
+    display: none;
 }
