@@ -34,5 +34,5 @@
 }
 
 .embedded-messaging-automated-response {
-    display: none;
+    display: none !important;
 }
