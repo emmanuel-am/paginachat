@@ -34,7 +34,7 @@
 }
 
 
-.minimizedButtonWrapper .minimizedButton {
+.slds-button.minimizedButton {
 
     border-radius: 0px !important;
     width: 200px !important;
@@ -43,10 +43,11 @@
 
 }
 
-.embedded-messaging > .embeddedMessagingFrame.isMinimized {
+.embeddedMessagingFrame.isMinimized {
 
     border-radius: 9px !important;
     width: 200px !important;
     height: 57px !important;
 
 }
+
