@@ -34,3 +34,22 @@
 }
 
 
+.slds-button.minimizedButton {
+
+    border-radius: 0px !important;
+    width: 200px !important;
+    background-color: transparent !important;
+    padding-left: 0px !important;
+
+}
+
+.embeddedMessagingFrame.isMinimized {
+
+    border-radius: 9px !important;
+    width: 200px !important;
+    height: 57px !important;
+
+}
+
+
+
