@@ -34,9 +34,10 @@
 }
 
 
-.minimizedButtonWrapper.minimizedButton{
+.slds-button .minimizedButton{
     background-color: #fff !important;
 
 }
+
 
 
