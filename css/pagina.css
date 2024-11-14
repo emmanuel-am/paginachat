@@ -43,8 +43,8 @@
     display: flex !important;
 }
 
-.minimizedButtonWrapper .minimizedButton{
-    background-color: #fff !important;
+.embeddedMessagingConversationButton .embeddedMessagingConversationButtonLoaded .no-hover{
+   
 }
 
 
