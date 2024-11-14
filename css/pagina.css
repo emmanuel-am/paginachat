@@ -8,6 +8,17 @@
    padding: 6px;
    padding-right: 0px;
 }
+
+.embeddedMessagingConversationButtonWrapper .embeddedMessagingConversationButton::before {
+   content: "Chat with Us";
+   display: block;
+   color: white;
+   font-size: var(--eswIconFontSize, 16px);
+   text-align: center;
+   line-height: 56px;
+   padding: 6px;
+   padding-right: 0px;
+}
     
 .embeddedMessagingConversationButtonWrapper .embeddedMessagingConversationButton {
     position: fixed !important;
