@@ -43,7 +43,7 @@
 
 }
 
-.embeddedMessagingFrame.isMinimized {
+#embeddedMessagingFrame .embeddedMessagingFrame.isMinimized {
 
     border-radius: 9px !important;
     width: 200px !important;
