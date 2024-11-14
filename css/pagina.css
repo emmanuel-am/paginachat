@@ -1,4 +1,15 @@
-.embeddedMessagingConversationButtonWrapper .embeddedMessagingConversationButton::after {
+div#embedded-messaging>div>button {
+   content: "Chat with Us";
+   display: block;
+   color: white;
+   font-size: var(--eswIconFontSize, 16px);
+   text-align: center;
+   line-height: 56px;
+   padding: 6px;
+   padding-right: 10%;
+}
+
+/*.embeddedMessagingConversationButtonWrapper .embeddedMessagingConversationButton::after {
    content: "Chat with Us";
    display: block;
    color: white;
@@ -52,7 +63,7 @@
    line-height: 56px;
    padding: 6px;
    padding-right: 10%;
-}
+}*/
 
 
 
