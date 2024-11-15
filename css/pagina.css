@@ -1,12 +1,12 @@
-div#embedded-messaging>div>button {
-   content: "Chat with Us";
-   display: block;
-   color: white;
-   font-size: var(--eswIconFontSize, 16px);
-   text-align: center;
-   line-height: 56px;
-   padding: 6px;
-   padding-right: 0px;
+div#embedded-messaging>.embeddedMessagingConversationButtonWrapper>button#embeddedMessagingConversationButton::after {
+    content: "Chat with Us";
+    display: block;
+    color: white;
+    font-size: var(--eswIconFontSize, 16px);
+    text-align: center;
+    line-height: 56px;
+    padding: 6px;
+    padding-right: 0px;
 }
 
 div#embedded-messaging>div>button {
@@ -32,62 +32,6 @@ div#embedded-messaging>div>button {
     justify-content: center !important;
     display: flex !important;
 }
-
-/*.embeddedMessagingConversationButtonWrapper .embeddedMessagingConversationButton::after {
-   content: "Chat with Us";
-   display: block;
-   color: white;
-   font-size: var(--eswIconFontSize, 16px);
-   text-align: center;
-   line-height: 56px;
-   padding: 6px;
-   padding-right: 10%;
-}
-
-.embeddedMessagingConversationButtonWrapper .embeddedMessagingConversationButton::before {
-   display: block;
-   color: white;
-   font-size: var(--eswIconFontSize, 16px);
-   text-align: center;
-   line-height: 56px;
-   padding: 6px;
-   padding-right: 0px;
-}
-    
-div#embedded-messaging>div>button {
-    position: fixed !important;
-    bottom: var(--eswButtonBottom, 25px) !important;
-    right: var(--eswButtonRight, 30px)  !important;
-    height: 56px !important;
-    outline: 0 !important;
-    border: none !important;
-    box-shadow: 2px 2px 5px 0 rgba(45, 45, 45, 0.5) !important;
-    text-align: center !important;
-    overflow: hidden !important;
-    pointer-events: all !important;
-    cursor: pointer !important;
-    line-height: normal !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    font-size: var(--eswIconFontSize, 16px) !important;
-    box-sizing: border-box !important;
-    width: 200px !important;
-    border-radius: 9px !important;
-    align-items: center !important;
-    justify-content: center !important;
-    display: flex !important;
-}
-
-.embeddedMessagingConversationButton .embeddedMessagingConversationButtonLoaded .no-hover{
-   content: "Chat with Us";
-   display: block;
-   color: white;
-   font-size: var(--eswIconFontSize, 16px);
-   text-align: center;
-   line-height: 56px;
-   padding: 6px;
-   padding-right: 10%;
-}*/
 
 
 
