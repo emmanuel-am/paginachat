@@ -33,6 +33,17 @@ div#embedded-messaging>div>button {
     display: flex !important;
 }
 
+.embedded-messaging > .embeddedMessagingFrame.isMinimized {
+    border-radius: 0px !important;
+    width: 200px !important;
+}
+
+.minimizedButtonWrapper .minimizedButton {
+    width: 200px !important;
+    border-radius: 0px !important;
+    right: -9px !important;
+}
+
 
 
 
