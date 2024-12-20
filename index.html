@@ -1,32 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/pagina.css">
+    <title>Chat Test Mrs Baird's</title>
+    <!-- Incluir el recurso estático de CSS -->
+    <link rel="stylesheet" type="text/css" href="/resource/CSS_file_MrsBairdsChatButton" />
 </head>
 <body>
-	
-<script type='text/javascript'>
-	function initEmbeddedMessaging() {
-		try {
-			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+    <script type='text/javascript'>
+        function initEmbeddedMessaging() {
+            try {
+                embeddedservice_bootstrap.settings.language = 'en_US'; // Por ejemplo, 'en' o 'en-US'
 
-			embeddedservice_bootstrap.init(
-				'00DO500000QCXla',
-				'Chat_Test_Mrs_Baird_s',
-				'https://bbusf--uat.sandbox.my.site.com/ESWChatTestMrsBairds1725046480619',
-				{
-					scrt2URL: 'https://bbusf--uat.sandbox.my.salesforce-scrt.com'
-				}
-			);
-		} catch (err) {
-			console.error('Error loading Embedded Messaging: ', err);
-		}
-	};
-</script>
-<script type='text/javascript' src='https://bbusf--uat.sandbox.my.site.com/ESWChatTestMrsBairds1725046480619/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
-
+                embeddedservice_bootstrap.init(
+                    '00DO500000QCXla',
+                    'Chat_Test_Mrs_Baird_s',
+                    'https://bbusf--uat.sandbox.my.site.com/ESWChatTestMrsBairds1725046480619',
+                    {
+                        scrt2URL: 'https://bbusf--uat.sandbox.my.salesforce-scrt.com'
+                    }
+                );
+            } catch (err) {
+                console.error('Error loading Embedded Messaging: ', err);
+            }
+        };
+    </script>
+    <script type='text/javascript' src='https://bbusf--uat.sandbox.my.site.com/ESWChatTestMrsBairds1725046480619/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 </body>
 </html>
