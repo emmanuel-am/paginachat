@@ -3,13 +3,16 @@
 <head>
     <title>Chat Test Mrs Baird's</title>
     <!-- Incluir el recurso estático de CSS -->
-    <link rel="stylesheet" type="text/css" href="https://bbusf--uat.sandbox.my.site.com/resource/CSS_file_MrsBairdsChatButton" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 </head>
 <body>
-   <script type='text/javascript'>
+<script type='text/javascript'>
 	function initEmbeddedMessaging() {
 		try {
-			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+                var lenguaje = document.querySelector('html[lang]') ? document.querySelector('html[lang]').getAttribute('lang') : 'en';
+                console.log('len vf: ' , lenguaje);
+                embeddedservice_bootstrap.settings.language = lenguaje ; // For example, enter 'en' or 'en-US'
 
 			embeddedservice_bootstrap.init(
 				'00DO500000QCXla',
@@ -19,12 +22,67 @@
 					scrt2URL: 'https://bbusf--uat.sandbox.my.salesforce-scrt.com'
 				}
 			);
+              	 const root2 = document.documentElement;
+                 if(lenguaje == 'en'){
+ 
+                   root2.style.setProperty('--chat-text', '"Chat With Us"');
+                 }else if (lenguaje == 'es'){
+                   root2.style.setProperty('--chat-text', '"Chatea con Nosotros"');
+                 } else if(lenguaje == 'fr'){ 
+                   root2.style.setProperty('--chat-text', '"Discuter avec nous"');
+                 }else{
+                   root2.style.setProperty('--chat-text', '"Chat With Us"');
+                 }
+                 var style = document.createElement('style');
+                style.innerHTML = `
+                 /* Personalización del chat */
+                 div#embedded-messaging>.embeddedMessagingConversationButtonWrapper>button#embeddedMessagingConversationButton::after {
+                    content: var(--chat-text) !important;
+                    display: block;
+                    color: white;
+                    font-size: var(--eswIconFontSize, 16px);
+                    text-align: center;
+                    line-height: 56px;
+                    padding: 6px;
+                    padding-right: 0px;
+                 }
+                 div#embedded-messaging>div>button {
+                    content: var(--chat-text) !important;
+                    position: fixed !important;
+                    bottom: var(--eswButtonBottom, 25px) !important;
+                    right: var(--eswButtonRight, 30px)  !important;
+                    height: 56px !important;
+                    outline: 0 !important;
+                    border: none !important;
+                    box-shadow: 2px 2px 5px 0 rgba(45, 45, 45, 0.5) !important;
+                    text-align: center !important;
+                    overflow: hidden !important;
+                    pointer-events: all !important;
+                    cursor: pointer !important;
+                    line-height: normal !important;
+                    padding: 0 !important;
+                    margin: 0 !important;
+                    font-size: var(--eswIconFontSize, 16px) !important;
+                    box-sizing: border-box !important;
+                    width: 200px !important;
+                    border-radius: 9px !important;
+                    align-items: center !important;
+                    justify-content: center !important;
+                    display: flex !important;
+                }
+
+                `;
+                   document.head.appendChild(style);
 		} catch (err) {
 			console.error('Error loading Embedded Messaging: ', err);
 		}
 	};
 </script>
 <script type='text/javascript' src='https://bbusf--uat.sandbox.my.site.com/ESWChatTestMrsBairds1725046480619/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+
+
+</body>
 
 </body>
 </html>
